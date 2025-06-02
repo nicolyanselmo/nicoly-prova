@@ -1,0 +1,96 @@
+:root {
+    --branco-principal: #f0ffff;
+    --cinza-secundario: #c0c0c0;
+    --cor-menu: #8908df;
+    --cor-de-fundo: #4e028b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 4;
+    padding-right: 200px; /* Espaço para o menu */
+}
+
+.menu {
+    background-color: var(--cor-menu);
+    width: 180px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0; /* Alterado para right */
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Itens um abaixo do outro */
+    height: 100%;
+}
+
+.menu li {
+    margin: 10px 0;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.menu a {
+    color: azure;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    color: rgb(218, 83, 188);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 10px;
+}
+
+main {
+    padding: 20px;
+    max-width: calc(100% - 200px); /* Ajuste para o menu */
+}
+
+/* Mantenha o resto do seu CSS original */
+.conteudo {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.imagem-destaque {
+    width: 50px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.descricao {
+    flex: 1;
+}
+
+.descricao p {
+    margin: 5px 0;
+    padding: 0;
+    color: var(--cinza-secundario);
+}
+
+.foto {
+    width: 300px;
+}
